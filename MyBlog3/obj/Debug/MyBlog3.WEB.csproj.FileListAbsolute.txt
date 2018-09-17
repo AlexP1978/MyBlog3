@@ -1,0 +1,12 @@
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.WEB.csprojResolveAssemblyReference.cache
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.AddCompanyMigration.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.AddCompanyMigration1.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.Article.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.Article1.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.Articles.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.Article2.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.Comment.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.Migrations.Picture.resources
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.WEB.csproj.GenerateResource.Cache
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.dll
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3\obj\Debug\MyBlog3.pdb

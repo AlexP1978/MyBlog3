@@ -1,0 +1,10 @@
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\obj\Debug\ArticleRepository.csprojResolveAssemblyReference.cache
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\ArticleRepository.dll.config
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\ArticleRepository.dll
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\ArticleRepository.pdb
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\EntityFramework.dll
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\EntityFramework.xml
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\obj\Debug\ArticleRepository.dll
+C:\Disk_D\Asp.Net\MyBlog3\ArticleRepository\obj\Debug\ArticleRepository.pdb
