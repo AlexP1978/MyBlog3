@@ -1,41 +1,89 @@
 ﻿@model IEnumerable<MyBlog3.Models.ArticleViewModel>
 
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ShortBody)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Author)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShortBody)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Author)
-            </td>
-            <td>
-                @Html.ActionLink("Article", "MakeOrder", new { id = item.Id })
-            </td>
-        </tr>
+@*@{
+        ViewBag.Title = "Index";
     }
 
-</table>
+    <h2>Index</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShortBody)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Author)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShortBody)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.ActionLink("Article", "MakeOrder", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>*@
+
+
+@using MyBlog3.Helpers
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Мой блог</title>
+</head>
+<body>
+    <div>
+        <h3>Статьи блога</h3>
+        @foreach (var item in Model)
+        {
+            <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
+            <p>Автор: @Html.DisplayFor(modelItem => item.Author)</p>
+                <p> Категория: @Html.DisplayFor(modelItem => item.Category) </p>
+                <p> @Html.DisplayFor(modelItem => item.ShortBody) </p>
+                <p> @Html.DisplayFor(modelItem => item.DataTxt) </p>
+                <p><a href = "/Home/More/@item.Id" > подробнее...</a></p>
+                <p></p>
+            if (User.IsInRole("admin") || ((User.IsInRole("user") && item.Author == User.Identity.Name)))
+            {
+                <p>
+                    <a href="/Home/Editing/@item.Id">Редактировать</a>
+                    <a href="/Home/Deleting/@item.Id"> | Удалить</a>
+                </p>
+                    <p></p>
+            }
+        }
+
+        @if (User.IsInRole("admin") || User.IsInRole("user"))
+        {
+            <p><br /></p>
+            <p><a color="RED" href="/Home/Adds"><h1>Добавить статью</h1></a></p>
+        }
+    </div>
+    <br />
+    @*<div class="btn-group">
+        @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x }))
+    </div>*@
+</body>
+</html>

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MyBlog3.Models
 {
-    public class PictureViewModels
+    public class PictureViewModel
     {
         public int Id { get; set; }
         public int ArticleId { get; set; }

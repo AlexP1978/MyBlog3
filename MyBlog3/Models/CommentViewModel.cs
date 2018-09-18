@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MyBlog3.Models
 {
-    public class CommentViewModels
+    public class CommentViewModel
     {
         public int Id { get; set; }
         public int ArticleId { get; set; }

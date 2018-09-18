@@ -31,22 +31,38 @@ namespace MyBlog3.Controllers
             //IndexViewModel ivm = new IndexViewModel { PageInfo = pageInfo, Articles = articlesPerPages };
             // возвращаем представление
             //return View(ivm);
-            return View(articleDtos);
+            return View(articles);
         }
 
-        //[HttpGet]
-        //public ActionResult More(int id)
-        //{
-        //    ViewBag.ArticleId = id;
-        //    var dtarticle = db.Articles.FirstOrDefault(p => p.Id == id);
-        //    ViewBag.Name = dtarticle.Name;
-        //    ViewBag.FullBody = dtarticle.FullBody;
-        //    // получаем из бд все объекты Article
-        //    IEnumerable<Comment> comments = db.Comments.Where(v => v.ArticleId == id).ToList();
-        //    // передаем все объекты в динамическое свойство Articles в ViewBag
-        //    ViewBag.Comments = comments;
-        //    return View();
+        [HttpGet]
+        public ActionResult More(int id)
+        {
+            //CommentViewModel comment;
+
+        //    var orderDto = new OrderDTO { PhoneId = order.PhoneId, Address = order.Address, PhoneNumber = order.PhoneNumber };
+        //    orderService.MakeOrder(orderDto);
+        //    return Content("<h2>Ваш заказ успешно оформлен</h2>");
         //}
+        //    catch (ValidationException ex)
+        //    {
+        //        ModelState.AddModelError(ex.Property, ex.Message);
+        //    }
+        //    return View(order);
+
+            ViewBag.ArticleId = id;
+            CommentDTO comment = articleService.GetComment(id);
+            var comm = new CommentViewModel { ArticleId = comment.Id };
+
+            var dtarticle = new ArticleViewModel { Id = comment.Id };
+                //db.Articles.FirstOrDefault(p => p.Id == id);
+            ViewBag.Name = dtarticle.Name;
+            ViewBag.FullBody = dtarticle.FullBody;
+            // получаем из бд все объекты Article
+            //IEnumerable<Comment> comments = db.Comments.Where(v => v.ArticleId == id).ToList();
+            // передаем все объекты в динамическое свойство Articles в ViewBag
+            ViewBag.Comments = comment.Comments;
+            return View();
+        }
 
         //[HttpPost]
         //public string More(Comment comment)
