@@ -1,0 +1,26 @@
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for <>f__AnonymousType0`5: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for <>f__AnonymousType1`5: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for <>f__AnonymousType2`4: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.AddCompanyMigration: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.AddCompanyMigration1: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.Article: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.Article1: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.Articles: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.Article2: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.Comment: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.Migrations.Picture: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate stub for MyBlog3.DAL.Migrations.Configuration: type is sealed.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for <>f__AnonymousType0`5: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for <>f__AnonymousType1`5: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for <>f__AnonymousType2`4: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.AddCompanyMigration+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.AddCompanyMigration1+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.Article+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.Article1+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.Articles+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.Article2+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.Migrations.Picture+<>c: type is not supported because of internal limitations.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.DAL.Migrations.Configuration: type is not visible to exported or assembly(ArticleRepository.Fakes).
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.DAL.Interfaces.IRepository`1: type is an interface.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.DAL.Interfaces.IUnitOfWork: type is an interface.
+C:\Disk_D\Asp.Net\MyBlog3\MyBlog3.BLL\Fakes\ArticleRepository.fakes : warning : Cannot generate shim for MyBlog3.DAL.Entities.ApplicationUser+<GenerateUserIdentityAsync>d__0: type is not supported because of internal limitations.

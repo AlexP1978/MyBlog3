@@ -147,6 +147,9 @@
       <HintPath>..\packages\Microsoft.Owin.Security.Twitter.4.0.0\lib\net451\Microsoft.Owin.Security.Twitter.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -257,48 +260,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\PagingHelpers.cs" />
-    <Compile Include="Migrations\201808201224180_AddCompanyMigration.cs" />
-    <Compile Include="Migrations\201808201224180_AddCompanyMigration.Designer.cs">
-      <DependentUpon>201808201224180_AddCompanyMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808201233301_AddCompanyMigration1.cs" />
-    <Compile Include="Migrations\201808201233301_AddCompanyMigration1.Designer.cs">
-      <DependentUpon>201808201233301_AddCompanyMigration1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808221116291_Article.cs" />
-    <Compile Include="Migrations\201808221116291_Article.Designer.cs">
-      <DependentUpon>201808221116291_Article.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808221152145_Article1.cs" />
-    <Compile Include="Migrations\201808221152145_Article1.Designer.cs">
-      <DependentUpon>201808221152145_Article1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808231144505_Articles.cs" />
-    <Compile Include="Migrations\201808231144505_Articles.Designer.cs">
-      <DependentUpon>201808231144505_Articles.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808231219472_Article2.cs" />
-    <Compile Include="Migrations\201808231219472_Article2.Designer.cs">
-      <DependentUpon>201808231219472_Article2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808231221103_Comment.cs" />
-    <Compile Include="Migrations\201808231221103_Comment.Designer.cs">
-      <DependentUpon>201808231221103_Comment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201808310946090_Picture.cs" />
-    <Compile Include="Migrations\201808310946090_Picture.Designer.cs">
-      <DependentUpon>201808310946090_Picture.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ArticleViewModel.cs" />
     <Compile Include="Models\CommentViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PageInfo.cs" />
     <Compile Include="Models\PictureViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Util\ArticleModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -410,32 +378,6 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201808201224180_AddCompanyMigration.resx">
-      <DependentUpon>201808201224180_AddCompanyMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808201233301_AddCompanyMigration1.resx">
-      <DependentUpon>201808201233301_AddCompanyMigration1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808221116291_Article.resx">
-      <DependentUpon>201808221116291_Article.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808221152145_Article1.resx">
-      <DependentUpon>201808221152145_Article1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808231144505_Articles.resx">
-      <DependentUpon>201808231144505_Articles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808231219472_Article2.resx">
-      <DependentUpon>201808231219472_Article2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808231221103_Comment.resx">
-      <DependentUpon>201808231221103_Comment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808310946090_Picture.resx">
-      <DependentUpon>201808310946090_Picture.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
@@ -448,16 +390,20 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyBlog3.BLL\MyBlog3.BLL.csproj">
-      <Project>{e5fb32e8-aab7-47ed-89e3-b87600cc7a7f}</Project>
-      <Name>MyBlog3.BLL</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArticleRepository\MyBlog3.DAL.csproj">
+      <Project>{6634f22c-6d18-467b-997f-245663c35e25}</Project>
+      <Name>MyBlog3.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBlog3.BLL\MyBlog3.BLL.csproj">
+      <Project>{e5fb32e8-aab7-47ed-89e3-b87600cc7a7f}</Project>
+      <Name>MyBlog3.BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

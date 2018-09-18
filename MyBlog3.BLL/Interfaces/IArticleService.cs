@@ -7,7 +7,7 @@ using MyBlog3.BLL.DTO;
 
 namespace MyBlog3.BLL.Interfaces
 {
-    interface IArticleService
+    public interface IArticleService
     {
         ArticleDTO GetArticle(int? id);
         IEnumerable<ArticleDTO> GetArticles();

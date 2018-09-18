@@ -12,7 +12,7 @@ using MyBlog3.BLL.Infrastructure;
 
 namespace MyBlog3.BLL.Services
 {
-    class ArticleService : IArticleService
+    public class ArticleService : IArticleService
     {
         IUnitOfWork Database { get; set; }
 

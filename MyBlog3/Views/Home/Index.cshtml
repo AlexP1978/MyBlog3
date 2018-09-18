@@ -1,45 +1,41 @@
-﻿@model MyBlog3.Models.IndexViewModel
-@using MyBlog3.Helpers
+﻿@model IEnumerable<MyBlog3.Models.ArticleViewModel>
+
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Index";
 }
 
-<!DOCTYPE html>
+<h2>Index</h2>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Мой блог</title>
-</head>
-<body>
-    <div>
-        <h3>Статьи блога</h3>
-        @foreach (var b in Model.Articles)
-         {
-            <h4>@b.Name</h4>
-                <p>Автор: @b.Author</p>
-                <p>Категория: @b.Category</p>
-                <p>@b.ShortBody</p>
-                <p>@b.DataTxt</p>
-                <p><a href="/Home/More/@b.Id">  подробнее...</a></p>
-                <p></p>
-                if (User.IsInRole("admin") || ( ( User.IsInRole("user") && @b.Author == User.Identity.Name)) )
-                {
-                    <p><a href="/Home/Editing/@b.Id">Редактировать</a>
-                    <a href="/Home/Deleting/@b.Id"> | Удалить</a></p>
-                    <p></p>
-                }
-        }
-        
-    @if ( User.IsInRole("admin") || User.IsInRole("user") )
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ShortBody)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
     {
-      <p><br /></p>
-      <p><a color="RED" href="/Home/Adds"><h1>Добавить статью</h1></a></p>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShortBody)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.ActionLink("Article", "MakeOrder", new { id = item.Id })
+            </td>
+        </tr>
     }
-</div>
-    <br />
-    <div class="btn-group">
-        @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x }))
-    </div>
-</body>
-</html>
+
+</table>

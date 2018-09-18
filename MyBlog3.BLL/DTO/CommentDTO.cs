@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyBlog3.BLL.DTO
 {
-    class CommentDTO
+    public class CommentDTO
     {
         public int Id { get; set; }
         public int ArticleId { get; set; }

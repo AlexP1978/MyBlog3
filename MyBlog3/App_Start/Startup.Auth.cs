@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using MyBlog3.Models;
+using MyBlog3.DAL.Entities;
 
 namespace MyBlog3
 {

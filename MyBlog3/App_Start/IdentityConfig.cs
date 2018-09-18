@@ -11,6 +11,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using MyBlog3.Models;
+using MyBlog3.DAL.Entities;
 
 namespace MyBlog3
 {

@@ -1,0 +1,2930 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArticleRepository.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MyBlog3.DAL.EF.Fakes.ShimArticleContext">
+            <summary>Shim type of MyBlog3.DAL.EF.ArticleContext</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.ShimArticleContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.ShimArticleContext.#ctor(MyBlog3.DAL.EF.ArticleContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances.ArticlesGet">
+            <summary>Sets the shim of ArticleContext.get_Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances.ArticlesSetDbSetOfArticle">
+            <summary>Sets the shim of ArticleContext.set_Articles(DbSet`1&lt;Article&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances.CommentsGet">
+            <summary>Sets the shim of ArticleContext.get_Comments()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances.CommentsSetDbSetOfComment">
+            <summary>Sets the shim of ArticleContext.set_Comments(DbSet`1&lt;Comment&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances.PicturesGet">
+            <summary>Sets the shim of ArticleContext.get_Pictures()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.AllInstances.PicturesSetDbSetOfPicture">
+            <summary>Sets the shim of ArticleContext.set_Pictures(DbSet`1&lt;Picture&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.ArticlesGet">
+            <summary>Sets the shim of ArticleContext.get_Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.ArticlesSetDbSetOfArticle">
+            <summary>Sets the shim of ArticleContext.set_Articles(DbSet`1&lt;Article&gt; value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.ShimArticleContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.ShimArticleContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.ShimArticleContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.ShimArticleContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.CommentsGet">
+            <summary>Sets the shim of ArticleContext.get_Comments()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.CommentsSetDbSetOfComment">
+            <summary>Sets the shim of ArticleContext.set_Comments(DbSet`1&lt;Comment&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.ConstructorString">
+            <summary>Sets the shim of ArticleContext.ArticleContext(String connectionString)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.PicturesGet">
+            <summary>Sets the shim of ArticleContext.get_Pictures()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.ShimArticleContext.PicturesSetDbSetOfPicture">
+            <summary>Sets the shim of ArticleContext.set_Pictures(DbSet`1&lt;Picture&gt; value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.EF.Fakes.StubArticleContext">
+            <summary>Stub type of MyBlog3.DAL.EF.ArticleContext</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.StubArticleContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.InitializeStub">
+            <summary>Initializes a new instance of type StubArticleContext</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.StubArticleContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.EF.Fakes.StubArticleContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of DbContext.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.EF.Fakes.StubArticleContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.EF.Fakes.StubArticleContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext">
+            <summary>Shim type of MyBlog3.DAL.Entities.ApplicationDbContext</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.#ctor(MyBlog3.DAL.Entities.ApplicationDbContext)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.Constructor">
+            <summary>Sets the shim of ApplicationDbContext.ApplicationDbContext()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimApplicationDbContext.Create">
+            <summary>Sets the shim of ApplicationDbContext.Create()</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser">
+            <summary>Shim type of MyBlog3.DAL.Entities.ApplicationUser</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.#ctor(MyBlog3.DAL.Entities.ApplicationUser)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.Bind(Microsoft.AspNet.Identity.IUser)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.Bind(Microsoft.AspNet.Identity.IUser{System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimApplicationUser.Constructor">
+            <summary>Sets the shim of ApplicationUser.ApplicationUser()</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimArticle">
+            <summary>Shim type of MyBlog3.DAL.Entities.Article</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimArticle.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimArticle.#ctor(MyBlog3.DAL.Entities.Article)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.AuthorGet">
+            <summary>Sets the shim of Article.get_Author()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.AuthorSetString">
+            <summary>Sets the shim of Article.set_Author(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.CategoryGet">
+            <summary>Sets the shim of Article.get_Category()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.CategorySetString">
+            <summary>Sets the shim of Article.set_Category(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.DataTxtGet">
+            <summary>Sets the shim of Article.get_DataTxt()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.DataTxtSetDateTime">
+            <summary>Sets the shim of Article.set_DataTxt(DateTime value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.FullBodyGet">
+            <summary>Sets the shim of Article.get_FullBody()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.FullBodySetString">
+            <summary>Sets the shim of Article.set_FullBody(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.IdGet">
+            <summary>Sets the shim of Article.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Article.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.NameGet">
+            <summary>Sets the shim of Article.get_Name()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.NameSetString">
+            <summary>Sets the shim of Article.set_Name(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.ShortBodyGet">
+            <summary>Sets the shim of Article.get_ShortBody()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AllInstances.ShortBodySetString">
+            <summary>Sets the shim of Article.set_ShortBody(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AuthorGet">
+            <summary>Sets the shim of Article.get_Author()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.AuthorSetString">
+            <summary>Sets the shim of Article.set_Author(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimArticle.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimArticle.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.CategoryGet">
+            <summary>Sets the shim of Article.get_Category()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.CategorySetString">
+            <summary>Sets the shim of Article.set_Category(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.Constructor">
+            <summary>Sets the shim of Article.Article()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.DataTxtGet">
+            <summary>Sets the shim of Article.get_DataTxt()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.DataTxtSetDateTime">
+            <summary>Sets the shim of Article.set_DataTxt(DateTime value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.FullBodyGet">
+            <summary>Sets the shim of Article.get_FullBody()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.FullBodySetString">
+            <summary>Sets the shim of Article.set_FullBody(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.IdGet">
+            <summary>Sets the shim of Article.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.IdSetInt32">
+            <summary>Sets the shim of Article.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.NameGet">
+            <summary>Sets the shim of Article.get_Name()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.NameSetString">
+            <summary>Sets the shim of Article.set_Name(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.ShortBodyGet">
+            <summary>Sets the shim of Article.get_ShortBody()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimArticle.ShortBodySetString">
+            <summary>Sets the shim of Article.set_ShortBody(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimComment">
+            <summary>Shim type of MyBlog3.DAL.Entities.Comment</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimComment.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimComment.#ctor(MyBlog3.DAL.Entities.Comment)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.ArticleIdGet">
+            <summary>Sets the shim of Comment.get_ArticleId()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.ArticleIdSetInt32">
+            <summary>Sets the shim of Comment.set_ArticleId(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.AuthorGet">
+            <summary>Sets the shim of Comment.get_Author()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.AuthorSetString">
+            <summary>Sets the shim of Comment.set_Author(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.CommentsGet">
+            <summary>Sets the shim of Comment.get_Comments()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.CommentsSetString">
+            <summary>Sets the shim of Comment.set_Comments(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.DataCommentGet">
+            <summary>Sets the shim of Comment.get_DataComment()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.DataCommentSetDateTime">
+            <summary>Sets the shim of Comment.set_DataComment(DateTime value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.IdGet">
+            <summary>Sets the shim of Comment.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Comment.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.ArticleIdGet">
+            <summary>Sets the shim of Comment.get_ArticleId()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.ArticleIdSetInt32">
+            <summary>Sets the shim of Comment.set_ArticleId(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AuthorGet">
+            <summary>Sets the shim of Comment.get_Author()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.AuthorSetString">
+            <summary>Sets the shim of Comment.set_Author(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimComment.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimComment.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.CommentsGet">
+            <summary>Sets the shim of Comment.get_Comments()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.CommentsSetString">
+            <summary>Sets the shim of Comment.set_Comments(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.Constructor">
+            <summary>Sets the shim of Comment.Comment()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.DataCommentGet">
+            <summary>Sets the shim of Comment.get_DataComment()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.DataCommentSetDateTime">
+            <summary>Sets the shim of Comment.set_DataComment(DateTime value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.IdGet">
+            <summary>Sets the shim of Comment.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimComment.IdSetInt32">
+            <summary>Sets the shim of Comment.set_Id(Int32 value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.ExternalLoginConfirmationViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.#ctor(MyBlog3.DAL.Entities.ExternalLoginConfirmationViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.AllInstances.EmailGet">
+            <summary>Sets the shim of ExternalLoginConfirmationViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.AllInstances.EmailSetString">
+            <summary>Sets the shim of ExternalLoginConfirmationViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.Constructor">
+            <summary>Sets the shim of ExternalLoginConfirmationViewModel.ExternalLoginConfirmationViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.EmailGet">
+            <summary>Sets the shim of ExternalLoginConfirmationViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginConfirmationViewModel.EmailSetString">
+            <summary>Sets the shim of ExternalLoginConfirmationViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.ExternalLoginListViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.#ctor(MyBlog3.DAL.Entities.ExternalLoginListViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.AllInstances.ReturnUrlGet">
+            <summary>Sets the shim of ExternalLoginListViewModel.get_ReturnUrl()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.AllInstances.ReturnUrlSetString">
+            <summary>Sets the shim of ExternalLoginListViewModel.set_ReturnUrl(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.Constructor">
+            <summary>Sets the shim of ExternalLoginListViewModel.ExternalLoginListViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.ReturnUrlGet">
+            <summary>Sets the shim of ExternalLoginListViewModel.get_ReturnUrl()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimExternalLoginListViewModel.ReturnUrlSetString">
+            <summary>Sets the shim of ExternalLoginListViewModel.set_ReturnUrl(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.ForgotPasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.#ctor(MyBlog3.DAL.Entities.ForgotPasswordViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.AllInstances.EmailGet">
+            <summary>Sets the shim of ForgotPasswordViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.AllInstances.EmailSetString">
+            <summary>Sets the shim of ForgotPasswordViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.Constructor">
+            <summary>Sets the shim of ForgotPasswordViewModel.ForgotPasswordViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.EmailGet">
+            <summary>Sets the shim of ForgotPasswordViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotPasswordViewModel.EmailSetString">
+            <summary>Sets the shim of ForgotPasswordViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.ForgotViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.#ctor(MyBlog3.DAL.Entities.ForgotViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.AllInstances.EmailGet">
+            <summary>Sets the shim of ForgotViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.AllInstances.EmailSetString">
+            <summary>Sets the shim of ForgotViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.Constructor">
+            <summary>Sets the shim of ForgotViewModel.ForgotViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.EmailGet">
+            <summary>Sets the shim of ForgotViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimForgotViewModel.EmailSetString">
+            <summary>Sets the shim of ForgotViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.LoginViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.#ctor(MyBlog3.DAL.Entities.LoginViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances.EmailGet">
+            <summary>Sets the shim of LoginViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances.EmailSetString">
+            <summary>Sets the shim of LoginViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances.PasswordGet">
+            <summary>Sets the shim of LoginViewModel.get_Password()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances.PasswordSetString">
+            <summary>Sets the shim of LoginViewModel.set_Password(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances.RememberMeGet">
+            <summary>Sets the shim of LoginViewModel.get_RememberMe()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.AllInstances.RememberMeSetBoolean">
+            <summary>Sets the shim of LoginViewModel.set_RememberMe(Boolean value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.Constructor">
+            <summary>Sets the shim of LoginViewModel.LoginViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.EmailGet">
+            <summary>Sets the shim of LoginViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.EmailSetString">
+            <summary>Sets the shim of LoginViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.PasswordGet">
+            <summary>Sets the shim of LoginViewModel.get_Password()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.PasswordSetString">
+            <summary>Sets the shim of LoginViewModel.set_Password(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.RememberMeGet">
+            <summary>Sets the shim of LoginViewModel.get_RememberMe()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimLoginViewModel.RememberMeSetBoolean">
+            <summary>Sets the shim of LoginViewModel.set_RememberMe(Boolean value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimPicture">
+            <summary>Shim type of MyBlog3.DAL.Entities.Picture</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimPicture.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimPicture.#ctor(MyBlog3.DAL.Entities.Picture)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.ArticleIdGet">
+            <summary>Sets the shim of Picture.get_ArticleId()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.ArticleIdSetInt32">
+            <summary>Sets the shim of Picture.set_ArticleId(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.IdGet">
+            <summary>Sets the shim of Picture.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.IdSetInt32">
+            <summary>Sets the shim of Picture.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.NameGet">
+            <summary>Sets the shim of Picture.get_Name()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.NameSetString">
+            <summary>Sets the shim of Picture.set_Name(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.URLGet">
+            <summary>Sets the shim of Picture.get_URL()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.AllInstances.URLSetString">
+            <summary>Sets the shim of Picture.set_URL(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.ArticleIdGet">
+            <summary>Sets the shim of Picture.get_ArticleId()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.ArticleIdSetInt32">
+            <summary>Sets the shim of Picture.set_ArticleId(Int32 value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimPicture.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimPicture.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.Constructor">
+            <summary>Sets the shim of Picture.Picture()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.IdGet">
+            <summary>Sets the shim of Picture.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.IdSetInt32">
+            <summary>Sets the shim of Picture.set_Id(Int32 value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.NameGet">
+            <summary>Sets the shim of Picture.get_Name()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.NameSetString">
+            <summary>Sets the shim of Picture.set_Name(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.URLGet">
+            <summary>Sets the shim of Picture.get_URL()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimPicture.URLSetString">
+            <summary>Sets the shim of Picture.set_URL(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.RegisterViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.#ctor(MyBlog3.DAL.Entities.RegisterViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances.ConfirmPasswordGet">
+            <summary>Sets the shim of RegisterViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances.ConfirmPasswordSetString">
+            <summary>Sets the shim of RegisterViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances.EmailGet">
+            <summary>Sets the shim of RegisterViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances.EmailSetString">
+            <summary>Sets the shim of RegisterViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances.PasswordGet">
+            <summary>Sets the shim of RegisterViewModel.get_Password()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.AllInstances.PasswordSetString">
+            <summary>Sets the shim of RegisterViewModel.set_Password(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.ConfirmPasswordGet">
+            <summary>Sets the shim of RegisterViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.ConfirmPasswordSetString">
+            <summary>Sets the shim of RegisterViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.Constructor">
+            <summary>Sets the shim of RegisterViewModel.RegisterViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.EmailGet">
+            <summary>Sets the shim of RegisterViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.EmailSetString">
+            <summary>Sets the shim of RegisterViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.PasswordGet">
+            <summary>Sets the shim of RegisterViewModel.get_Password()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimRegisterViewModel.PasswordSetString">
+            <summary>Sets the shim of RegisterViewModel.set_Password(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.ResetPasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.#ctor(MyBlog3.DAL.Entities.ResetPasswordViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.CodeGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_Code()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.CodeSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_Code(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.ConfirmPasswordGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.ConfirmPasswordSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.EmailGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.EmailSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.PasswordGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_Password()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.AllInstances.PasswordSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_Password(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.CodeGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_Code()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.CodeSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_Code(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.ConfirmPasswordGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.ConfirmPasswordSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.Constructor">
+            <summary>Sets the shim of ResetPasswordViewModel.ResetPasswordViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.EmailGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.EmailSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.PasswordGet">
+            <summary>Sets the shim of ResetPasswordViewModel.get_Password()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimResetPasswordViewModel.PasswordSetString">
+            <summary>Sets the shim of ResetPasswordViewModel.set_Password(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.SendCodeViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.#ctor(MyBlog3.DAL.Entities.SendCodeViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.ProvidersGet">
+            <summary>Sets the shim of SendCodeViewModel.get_Providers()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.ProvidersSetICollectionOfSelectListItem">
+            <summary>Sets the shim of SendCodeViewModel.set_Providers(ICollection`1&lt;SelectListItem&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.RememberMeGet">
+            <summary>Sets the shim of SendCodeViewModel.get_RememberMe()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.RememberMeSetBoolean">
+            <summary>Sets the shim of SendCodeViewModel.set_RememberMe(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.ReturnUrlGet">
+            <summary>Sets the shim of SendCodeViewModel.get_ReturnUrl()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.ReturnUrlSetString">
+            <summary>Sets the shim of SendCodeViewModel.set_ReturnUrl(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.SelectedProviderGet">
+            <summary>Sets the shim of SendCodeViewModel.get_SelectedProvider()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.AllInstances.SelectedProviderSetString">
+            <summary>Sets the shim of SendCodeViewModel.set_SelectedProvider(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.Constructor">
+            <summary>Sets the shim of SendCodeViewModel.SendCodeViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.ProvidersGet">
+            <summary>Sets the shim of SendCodeViewModel.get_Providers()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.ProvidersSetICollectionOfSelectListItem">
+            <summary>Sets the shim of SendCodeViewModel.set_Providers(ICollection`1&lt;SelectListItem&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.RememberMeGet">
+            <summary>Sets the shim of SendCodeViewModel.get_RememberMe()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.RememberMeSetBoolean">
+            <summary>Sets the shim of SendCodeViewModel.set_RememberMe(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.ReturnUrlGet">
+            <summary>Sets the shim of SendCodeViewModel.get_ReturnUrl()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.ReturnUrlSetString">
+            <summary>Sets the shim of SendCodeViewModel.set_ReturnUrl(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.SelectedProviderGet">
+            <summary>Sets the shim of SendCodeViewModel.get_SelectedProvider()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimSendCodeViewModel.SelectedProviderSetString">
+            <summary>Sets the shim of SendCodeViewModel.set_SelectedProvider(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel">
+            <summary>Shim type of MyBlog3.DAL.Entities.VerifyCodeViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.#ctor(MyBlog3.DAL.Entities.VerifyCodeViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.CodeGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_Code()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.CodeSetString">
+            <summary>Sets the shim of VerifyCodeViewModel.set_Code(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.ProviderGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_Provider()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.ProviderSetString">
+            <summary>Sets the shim of VerifyCodeViewModel.set_Provider(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.RememberBrowserGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_RememberBrowser()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.RememberBrowserSetBoolean">
+            <summary>Sets the shim of VerifyCodeViewModel.set_RememberBrowser(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.RememberMeGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_RememberMe()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.RememberMeSetBoolean">
+            <summary>Sets the shim of VerifyCodeViewModel.set_RememberMe(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.ReturnUrlGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_ReturnUrl()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.AllInstances.ReturnUrlSetString">
+            <summary>Sets the shim of VerifyCodeViewModel.set_ReturnUrl(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.CodeGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_Code()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.CodeSetString">
+            <summary>Sets the shim of VerifyCodeViewModel.set_Code(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.Constructor">
+            <summary>Sets the shim of VerifyCodeViewModel.VerifyCodeViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.ProviderGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_Provider()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.ProviderSetString">
+            <summary>Sets the shim of VerifyCodeViewModel.set_Provider(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.RememberBrowserGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_RememberBrowser()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.RememberBrowserSetBoolean">
+            <summary>Sets the shim of VerifyCodeViewModel.set_RememberBrowser(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.RememberMeGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_RememberMe()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.RememberMeSetBoolean">
+            <summary>Sets the shim of VerifyCodeViewModel.set_RememberMe(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.ReturnUrlGet">
+            <summary>Sets the shim of VerifyCodeViewModel.get_ReturnUrl()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.ShimVerifyCodeViewModel.ReturnUrlSetString">
+            <summary>Sets the shim of VerifyCodeViewModel.set_ReturnUrl(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext">
+            <summary>Stub type of MyBlog3.DAL.Entities.ApplicationDbContext</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.AttachBackingFieldToRoles">
+            <summary>Attaches delegates to emulate StubApplicationDbContext.Roles as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.AttachBackingFieldToUsers">
+            <summary>Attaches delegates to emulate StubApplicationDbContext.Users as a property with a backing field.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.InitializeStub">
+            <summary>Initializes a new instance of type StubApplicationDbContext</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of IdentityDbContext`6.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of IdentityDbContext`6.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.Roles">
+            <summary>Sets the stub of IdentityDbContext`6.get_Roles()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.RolesGet">
+            <summary>Sets the stub of IdentityDbContext`6.get_Roles()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.RolesSetIDbSetOfIdentityRole">
+            <summary>Sets the stub of IdentityDbContext`6.set_Roles(IDbSet`1&lt;!1&gt; value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.Users">
+            <summary>Sets the stub of IdentityDbContext`6.get_Users()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.UsersGet">
+            <summary>Sets the stub of IdentityDbContext`6.get_Users()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.UsersSetIDbSetOfApplicationUser">
+            <summary>Sets the stub of IdentityDbContext`6.set_Users(IDbSet`1&lt;!0&gt; value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of IdentityDbContext`6.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationDbContext.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of IdentityDbContext`6.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubApplicationUser">
+            <summary>Stub type of MyBlog3.DAL.Entities.ApplicationUser</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AccessFailedCount">
+            <summary>Sets the stub of IdentityUser`4.get_AccessFailedCount()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AccessFailedCountGet">
+            <summary>Sets the stub of IdentityUser`4.get_AccessFailedCount()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AccessFailedCountSetInt32">
+            <summary>Sets the stub of IdentityUser`4.set_AccessFailedCount(Int32 value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToAccessFailedCount">
+            <summary>Attaches delegates to emulate StubApplicationUser.AccessFailedCount as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToEmail">
+            <summary>Attaches delegates to emulate StubApplicationUser.Email as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToEmailConfirmed">
+            <summary>Attaches delegates to emulate StubApplicationUser.EmailConfirmed as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToId">
+            <summary>Attaches delegates to emulate StubApplicationUser.Id as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToLockoutEnabled">
+            <summary>Attaches delegates to emulate StubApplicationUser.LockoutEnabled as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToLockoutEndDateUtc">
+            <summary>Attaches delegates to emulate StubApplicationUser.LockoutEndDateUtc as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToPasswordHash">
+            <summary>Attaches delegates to emulate StubApplicationUser.PasswordHash as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToPhoneNumber">
+            <summary>Attaches delegates to emulate StubApplicationUser.PhoneNumber as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToPhoneNumberConfirmed">
+            <summary>Attaches delegates to emulate StubApplicationUser.PhoneNumberConfirmed as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToSecurityStamp">
+            <summary>Attaches delegates to emulate StubApplicationUser.SecurityStamp as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToTwoFactorEnabled">
+            <summary>Attaches delegates to emulate StubApplicationUser.TwoFactorEnabled as a property with a backing field.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.AttachBackingFieldToUserName">
+            <summary>Attaches delegates to emulate StubApplicationUser.UserName as a property with a backing field.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.Email">
+            <summary>Sets the stub of IdentityUser`4.get_Email()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.EmailConfirmed">
+            <summary>Sets the stub of IdentityUser`4.get_EmailConfirmed()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.EmailConfirmedGet">
+            <summary>Sets the stub of IdentityUser`4.get_EmailConfirmed()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.EmailConfirmedSetBoolean">
+            <summary>Sets the stub of IdentityUser`4.set_EmailConfirmed(Boolean value)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.EmailGet">
+            <summary>Sets the stub of IdentityUser`4.get_Email()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.EmailSetString">
+            <summary>Sets the stub of IdentityUser`4.set_Email(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.Id">
+            <summary>Sets the stub of IdentityUser`4.get_Id()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.IdGet">
+            <summary>Sets the stub of IdentityUser`4.get_Id()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.IdSetString">
+            <summary>Sets the stub of IdentityUser`4.set_Id(!0 value)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.InitializeStub">
+            <summary>Initializes a new instance of type StubApplicationUser</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.LockoutEnabled">
+            <summary>Sets the stub of IdentityUser`4.get_LockoutEnabled()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.LockoutEnabledGet">
+            <summary>Sets the stub of IdentityUser`4.get_LockoutEnabled()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.LockoutEnabledSetBoolean">
+            <summary>Sets the stub of IdentityUser`4.set_LockoutEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.LockoutEndDateUtc">
+            <summary>Sets the stub of IdentityUser`4.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.LockoutEndDateUtcGet">
+            <summary>Sets the stub of IdentityUser`4.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.LockoutEndDateUtcSetNullableOfDateTime">
+            <summary>Sets the stub of IdentityUser`4.set_LockoutEndDateUtc(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PasswordHash">
+            <summary>Sets the stub of IdentityUser`4.get_PasswordHash()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PasswordHashGet">
+            <summary>Sets the stub of IdentityUser`4.get_PasswordHash()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PasswordHashSetString">
+            <summary>Sets the stub of IdentityUser`4.set_PasswordHash(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PhoneNumber">
+            <summary>Sets the stub of IdentityUser`4.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PhoneNumberConfirmed">
+            <summary>Sets the stub of IdentityUser`4.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PhoneNumberConfirmedGet">
+            <summary>Sets the stub of IdentityUser`4.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PhoneNumberConfirmedSetBoolean">
+            <summary>Sets the stub of IdentityUser`4.set_PhoneNumberConfirmed(Boolean value)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PhoneNumberGet">
+            <summary>Sets the stub of IdentityUser`4.get_PhoneNumber()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.PhoneNumberSetString">
+            <summary>Sets the stub of IdentityUser`4.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.SecurityStamp">
+            <summary>Sets the stub of IdentityUser`4.get_SecurityStamp()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.SecurityStampGet">
+            <summary>Sets the stub of IdentityUser`4.get_SecurityStamp()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.SecurityStampSetString">
+            <summary>Sets the stub of IdentityUser`4.set_SecurityStamp(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.TwoFactorEnabled">
+            <summary>Sets the stub of IdentityUser`4.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.TwoFactorEnabledGet">
+            <summary>Sets the stub of IdentityUser`4.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.TwoFactorEnabledSetBoolean">
+            <summary>Sets the stub of IdentityUser`4.set_TwoFactorEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.UserName">
+            <summary>Sets the stub of IdentityUser`4.get_UserName()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.UserNameGet">
+            <summary>Sets the stub of IdentityUser`4.get_UserName()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Entities.Fakes.StubApplicationUser.UserNameSetString">
+            <summary>Sets the stub of IdentityUser`4.set_UserName(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubArticle">
+            <summary>Stub type of MyBlog3.DAL.Entities.Article</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubArticle.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubArticle.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubArticle.InitializeStub">
+            <summary>Initializes a new instance of type StubArticle</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubArticle.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubArticle.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubComment">
+            <summary>Stub type of MyBlog3.DAL.Entities.Comment</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubComment.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubComment.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubComment.InitializeStub">
+            <summary>Initializes a new instance of type StubComment</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubComment.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubComment.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubExternalLoginConfirmationViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.ExternalLoginConfirmationViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubExternalLoginConfirmationViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubExternalLoginConfirmationViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubExternalLoginConfirmationViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubExternalLoginConfirmationViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubExternalLoginConfirmationViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubExternalLoginConfirmationViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubExternalLoginListViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.ExternalLoginListViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubExternalLoginListViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubExternalLoginListViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubExternalLoginListViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubExternalLoginListViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubExternalLoginListViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubExternalLoginListViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubForgotPasswordViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.ForgotPasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubForgotPasswordViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubForgotPasswordViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubForgotPasswordViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubForgotPasswordViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubForgotPasswordViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubForgotPasswordViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubForgotViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.ForgotViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubForgotViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubForgotViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubForgotViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubForgotViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubForgotViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubForgotViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubLoginViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.LoginViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubLoginViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubLoginViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubLoginViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubLoginViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubLoginViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubLoginViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubPicture">
+            <summary>Stub type of MyBlog3.DAL.Entities.Picture</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubPicture.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubPicture.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubPicture.InitializeStub">
+            <summary>Initializes a new instance of type StubPicture</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubPicture.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubPicture.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubRegisterViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.RegisterViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubRegisterViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubRegisterViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubRegisterViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubRegisterViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubRegisterViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubRegisterViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubResetPasswordViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.ResetPasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubResetPasswordViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubResetPasswordViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubResetPasswordViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubResetPasswordViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubResetPasswordViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubResetPasswordViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubSendCodeViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.SendCodeViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubSendCodeViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubSendCodeViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubSendCodeViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubSendCodeViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubSendCodeViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubSendCodeViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Entities.Fakes.StubVerifyCodeViewModel">
+            <summary>Stub type of MyBlog3.DAL.Entities.VerifyCodeViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubVerifyCodeViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubVerifyCodeViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Entities.Fakes.StubVerifyCodeViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubVerifyCodeViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubVerifyCodeViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Entities.Fakes.StubVerifyCodeViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1">
+            <summary>Stub type of MyBlog3.DAL.Interfaces.IRepository`1</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.#ctor">
+            <summary>Initializes a new instance of type StubIRepository</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.CreateT0">
+            <summary>Sets the stub of IRepository`1.Create(!0 item)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.DeleteInt32">
+            <summary>Sets the stub of IRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.FindFuncOfT0Boolean">
+            <summary>Sets the stub of IRepository`1.Find(Func`2&lt;!0,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.GetInt32">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.MyBlog3#DAL#Interfaces#IRepository{T}#Create(`0)">
+            <summary>Sets the stub of IRepository`1.Create(!0 item)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.MyBlog3#DAL#Interfaces#IRepository{T}#Delete(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Delete(Int32 id)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.MyBlog3#DAL#Interfaces#IRepository{T}#Find(System.Func{`0,System.Boolean})">
+            <summary>Sets the stub of IRepository`1.Find(Func`2&lt;!0,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.MyBlog3#DAL#Interfaces#IRepository{T}#Get(System.Int32)">
+            <summary>Sets the stub of IRepository`1.Get(Int32 id)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.MyBlog3#DAL#Interfaces#IRepository{T}#GetAll">
+            <summary>Sets the stub of IRepository`1.GetAll()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.MyBlog3#DAL#Interfaces#IRepository{T}#Update(`0)">
+            <summary>Sets the stub of IRepository`1.Update(!0 item)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIRepository`1.UpdateT0">
+            <summary>Sets the stub of IRepository`1.Update(!0 item)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork">
+            <summary>Stub type of MyBlog3.DAL.Interfaces.IUnitOfWork</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.#ctor">
+            <summary>Initializes a new instance of type StubIUnitOfWork</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.MyBlog3#DAL#Interfaces#IUnitOfWork#Articles">
+            <summary>Sets the stub of IUnitOfWork.get_Articles()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.ArticlesGet">
+            <summary>Sets the stub of IUnitOfWork.get_Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.MyBlog3#DAL#Interfaces#IUnitOfWork#Comments">
+            <summary>Sets the stub of IUnitOfWork.get_Comments()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.CommentsGet">
+            <summary>Sets the stub of IUnitOfWork.get_Comments()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.MyBlog3#DAL#Interfaces#IUnitOfWork#Save">
+            <summary>Sets the stub of IUnitOfWork.Save()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.MyBlog3#DAL#Interfaces#IUnitOfWork#Pictures">
+            <summary>Sets the stub of IUnitOfWork.get_Pictures()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.PicturesGet">
+            <summary>Sets the stub of IUnitOfWork.get_Pictures()</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.Save">
+            <summary>Sets the stub of IUnitOfWork.Save()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Interfaces.Fakes.StubIUnitOfWork.System#IDisposable#Dispose">
+            <summary>Sets the stub of IDisposable.Dispose()</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository">
+            <summary>Shim type of MyBlog3.DAL.Repositories.ArticleRepository</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.#ctor(MyBlog3.DAL.Repositories.ArticleRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances.CreateArticle">
+            <summary>Sets the shim of ArticleRepository.Create(Article article)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances.DeleteInt32">
+            <summary>Sets the shim of ArticleRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances.FindFuncOfArticleBoolean">
+            <summary>Sets the shim of ArticleRepository.Find(Func`2&lt;Article,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances.GetAll">
+            <summary>Sets the shim of ArticleRepository.GetAll()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances.GetInt32">
+            <summary>Sets the shim of ArticleRepository.Get(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.AllInstances.UpdateArticle">
+            <summary>Sets the shim of ArticleRepository.Update(Article article)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.Bind(MyBlog3.DAL.Interfaces.IRepository{MyBlog3.DAL.Entities.Article})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.ConstructorArticleContext">
+            <summary>Sets the shim of ArticleRepository.ArticleRepository(ArticleContext context)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.CreateArticle">
+            <summary>Sets the shim of ArticleRepository.Create(Article article)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.DeleteInt32">
+            <summary>Sets the shim of ArticleRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.FindFuncOfArticleBoolean">
+            <summary>Sets the shim of ArticleRepository.Find(Func`2&lt;Article,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.GetAll">
+            <summary>Sets the shim of ArticleRepository.GetAll()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.GetInt32">
+            <summary>Sets the shim of ArticleRepository.Get(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimArticleRepository.UpdateArticle">
+            <summary>Sets the shim of ArticleRepository.Update(Article article)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository">
+            <summary>Shim type of MyBlog3.DAL.Repositories.CommentRepository</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.#ctor(MyBlog3.DAL.Repositories.CommentRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances.CreateComment">
+            <summary>Sets the shim of CommentRepository.Create(Comment comment)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances.DeleteInt32">
+            <summary>Sets the shim of CommentRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances.FindFuncOfCommentBoolean">
+            <summary>Sets the shim of CommentRepository.Find(Func`2&lt;Comment,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances.GetAll">
+            <summary>Sets the shim of CommentRepository.GetAll()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances.GetInt32">
+            <summary>Sets the shim of CommentRepository.Get(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.AllInstances.UpdateComment">
+            <summary>Sets the shim of CommentRepository.Update(Comment comment)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.Bind(MyBlog3.DAL.Interfaces.IRepository{MyBlog3.DAL.Entities.Comment})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.ConstructorArticleContext">
+            <summary>Sets the shim of CommentRepository.CommentRepository(ArticleContext context)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.CreateComment">
+            <summary>Sets the shim of CommentRepository.Create(Comment comment)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.DeleteInt32">
+            <summary>Sets the shim of CommentRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.FindFuncOfCommentBoolean">
+            <summary>Sets the shim of CommentRepository.Find(Func`2&lt;Comment,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.GetAll">
+            <summary>Sets the shim of CommentRepository.GetAll()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.GetInt32">
+            <summary>Sets the shim of CommentRepository.Get(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimCommentRepository.UpdateComment">
+            <summary>Sets the shim of CommentRepository.Update(Comment comment)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork">
+            <summary>Shim type of MyBlog3.DAL.Repositories.EFUnitOfWork</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.#ctor(MyBlog3.DAL.Repositories.EFUnitOfWork)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances.ArticlesGet">
+            <summary>Sets the shim of EFUnitOfWork.get_Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances.CommentsGet">
+            <summary>Sets the shim of EFUnitOfWork.get_Comments()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances.Dispose">
+            <summary>Sets the shim of EFUnitOfWork.Dispose()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of EFUnitOfWork.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances.PicturesGet">
+            <summary>Sets the shim of EFUnitOfWork.get_Pictures()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.AllInstances.Save">
+            <summary>Sets the shim of EFUnitOfWork.Save()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.ArticlesGet">
+            <summary>Sets the shim of EFUnitOfWork.get_Articles()</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.Bind(MyBlog3.DAL.Interfaces.IUnitOfWork)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.CommentsGet">
+            <summary>Sets the shim of EFUnitOfWork.get_Comments()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.ConstructorString">
+            <summary>Sets the shim of EFUnitOfWork.EFUnitOfWork(String connectionString)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.Dispose">
+            <summary>Sets the shim of EFUnitOfWork.Dispose()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.DisposeBoolean">
+            <summary>Sets the shim of EFUnitOfWork.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.PicturesGet">
+            <summary>Sets the shim of EFUnitOfWork.get_Pictures()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimEFUnitOfWork.Save">
+            <summary>Sets the shim of EFUnitOfWork.Save()</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository">
+            <summary>Shim type of MyBlog3.DAL.Repositories.PictureRepository</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.#ctor(MyBlog3.DAL.Repositories.PictureRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances.CreatePicture">
+            <summary>Sets the shim of PictureRepository.Create(Picture picture)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances.DeleteInt32">
+            <summary>Sets the shim of PictureRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances.FindFuncOfPictureBoolean">
+            <summary>Sets the shim of PictureRepository.Find(Func`2&lt;Picture,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances.GetAll">
+            <summary>Sets the shim of PictureRepository.GetAll()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances.GetInt32">
+            <summary>Sets the shim of PictureRepository.Get(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.AllInstances.UpdatePicture">
+            <summary>Sets the shim of PictureRepository.Update(Picture picture)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.Bind(MyBlog3.DAL.Interfaces.IRepository{MyBlog3.DAL.Entities.Picture})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.ConstructorArticleContext">
+            <summary>Sets the shim of PictureRepository.PictureRepository(ArticleContext context)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.CreatePicture">
+            <summary>Sets the shim of PictureRepository.Create(Picture picture)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.DeleteInt32">
+            <summary>Sets the shim of PictureRepository.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.FindFuncOfPictureBoolean">
+            <summary>Sets the shim of PictureRepository.Find(Func`2&lt;Picture,Boolean&gt; predicate)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.GetAll">
+            <summary>Sets the shim of PictureRepository.GetAll()</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.GetInt32">
+            <summary>Sets the shim of PictureRepository.Get(Int32 id)</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.ShimPictureRepository.UpdatePicture">
+            <summary>Sets the shim of PictureRepository.Update(Picture picture)</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.StubArticleRepository">
+            <summary>Stub type of MyBlog3.DAL.Repositories.ArticleRepository</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubArticleRepository.#ctor(MyBlog3.DAL.EF.ArticleContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubArticleRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubArticleRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubArticleRepository</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubArticleRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubArticleRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.StubCommentRepository">
+            <summary>Stub type of MyBlog3.DAL.Repositories.CommentRepository</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubCommentRepository.#ctor(MyBlog3.DAL.EF.ArticleContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubCommentRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubCommentRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubCommentRepository</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubCommentRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubCommentRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork">
+            <summary>Stub type of MyBlog3.DAL.Repositories.EFUnitOfWork</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.Dispose(System.Boolean)">
+            <summary>Sets the stub of EFUnitOfWork.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.DisposeBoolean">
+            <summary>Sets the stub of EFUnitOfWork.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.InitializeStub">
+            <summary>Initializes a new instance of type StubEFUnitOfWork</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubEFUnitOfWork.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.DAL.Repositories.Fakes.StubPictureRepository">
+            <summary>Stub type of MyBlog3.DAL.Repositories.PictureRepository</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubPictureRepository.#ctor(MyBlog3.DAL.EF.ArticleContext)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubPictureRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.DAL.Repositories.Fakes.StubPictureRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubPictureRepository</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubPictureRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.DAL.Repositories.Fakes.StubPictureRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration">
+            <summary>Shim type of MyBlog3.Migrations.AddCompanyMigration</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.#ctor(MyBlog3.Migrations.AddCompanyMigration)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.AllInstances.Down">
+            <summary>Sets the shim of AddCompanyMigration.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.AllInstances.Up">
+            <summary>Sets the shim of AddCompanyMigration.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.Constructor">
+            <summary>Sets the shim of AddCompanyMigration.AddCompanyMigration()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.Down">
+            <summary>Sets the shim of AddCompanyMigration.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration.Up">
+            <summary>Sets the shim of AddCompanyMigration.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1">
+            <summary>Shim type of MyBlog3.Migrations.AddCompanyMigration1</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.#ctor(MyBlog3.Migrations.AddCompanyMigration1)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.AllInstances.Down">
+            <summary>Sets the shim of AddCompanyMigration1.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.AllInstances.Up">
+            <summary>Sets the shim of AddCompanyMigration1.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.Constructor">
+            <summary>Sets the shim of AddCompanyMigration1.AddCompanyMigration1()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.Down">
+            <summary>Sets the shim of AddCompanyMigration1.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of AddCompanyMigration1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimAddCompanyMigration1.Up">
+            <summary>Sets the shim of AddCompanyMigration1.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticle">
+            <summary>Shim type of MyBlog3.Migrations.Article</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle.#ctor(MyBlog3.Migrations.Article)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticle.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.AllInstances.Down">
+            <summary>Sets the shim of Article.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.AllInstances.Up">
+            <summary>Sets the shim of Article.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.Constructor">
+            <summary>Sets the shim of Article.Article()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.Down">
+            <summary>Sets the shim of Article.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle.Up">
+            <summary>Sets the shim of Article.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticle1">
+            <summary>Shim type of MyBlog3.Migrations.Article1</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle1.#ctor(MyBlog3.Migrations.Article1)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticle1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.AllInstances.Down">
+            <summary>Sets the shim of Article1.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.AllInstances.Up">
+            <summary>Sets the shim of Article1.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle1.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle1.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.Constructor">
+            <summary>Sets the shim of Article1.Article1()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.Down">
+            <summary>Sets the shim of Article1.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article1.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle1.Up">
+            <summary>Sets the shim of Article1.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticle2">
+            <summary>Shim type of MyBlog3.Migrations.Article2</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle2.#ctor(MyBlog3.Migrations.Article2)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticle2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.AllInstances.Down">
+            <summary>Sets the shim of Article2.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article2.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article2.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article2.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.AllInstances.Up">
+            <summary>Sets the shim of Article2.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle2.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticle2.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.Constructor">
+            <summary>Sets the shim of Article2.Article2()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.Down">
+            <summary>Sets the shim of Article2.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article2.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article2.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Article2.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticle2.Up">
+            <summary>Sets the shim of Article2.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticles">
+            <summary>Shim type of MyBlog3.Migrations.Articles</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticles.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticles.#ctor(MyBlog3.Migrations.Articles)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimArticles.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.AllInstances.Down">
+            <summary>Sets the shim of Articles.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Articles.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Articles.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Articles.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.AllInstances.Up">
+            <summary>Sets the shim of Articles.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticles.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticles.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticles.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimArticles.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.Constructor">
+            <summary>Sets the shim of Articles.Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.Down">
+            <summary>Sets the shim of Articles.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Articles.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Articles.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Articles.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimArticles.Up">
+            <summary>Sets the shim of Articles.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimComment">
+            <summary>Shim type of MyBlog3.Migrations.Comment</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimComment.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimComment.#ctor(MyBlog3.Migrations.Comment)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimComment.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.AllInstances.Down">
+            <summary>Sets the shim of Comment.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Comment.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Comment.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Comment.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.AllInstances.Up">
+            <summary>Sets the shim of Comment.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimComment.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimComment.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimComment.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimComment.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.Constructor">
+            <summary>Sets the shim of Comment.Comment()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.Down">
+            <summary>Sets the shim of Comment.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Comment.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Comment.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Comment.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimComment.Up">
+            <summary>Sets the shim of Comment.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimPicture">
+            <summary>Shim type of MyBlog3.Migrations.Picture</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimPicture.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimPicture.#ctor(MyBlog3.Migrations.Picture)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Migrations.Fakes.ShimPicture.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.AllInstances.Down">
+            <summary>Sets the shim of Picture.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.AllInstances.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Picture.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.AllInstances.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Picture.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.AllInstances.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Picture.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.AllInstances.Up">
+            <summary>Sets the shim of Picture.Up()</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimPicture.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimPicture.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimPicture.Bind(System.Data.Entity.Migrations.Infrastructure.IDbMigration)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MyBlog3.Migrations.Fakes.ShimPicture.Bind(System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.Constructor">
+            <summary>Sets the shim of Picture.Picture()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.Down">
+            <summary>Sets the shim of Picture.Down()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.IdSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Picture.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Id()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.SourceSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Picture.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Source()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.TargetSystemDataEntityMigrationsInfrastructureIMigrationMetadataget">
+            <summary>Sets the shim of Picture.System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata.get_Target()</summary>
+        </member>
+        <member name="P:MyBlog3.Migrations.Fakes.ShimPicture.Up">
+            <summary>Sets the shim of Picture.Up()</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel">
+            <summary>Shim type of MyBlog3.Models.AddPhoneNumberViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.#ctor(MyBlog3.Models.AddPhoneNumberViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.AllInstances.NumberGet">
+            <summary>Sets the shim of AddPhoneNumberViewModel.get_Number()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.AllInstances.NumberSetString">
+            <summary>Sets the shim of AddPhoneNumberViewModel.set_Number(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.Constructor">
+            <summary>Sets the shim of AddPhoneNumberViewModel.AddPhoneNumberViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.NumberGet">
+            <summary>Sets the shim of AddPhoneNumberViewModel.get_Number()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimAddPhoneNumberViewModel.NumberSetString">
+            <summary>Sets the shim of AddPhoneNumberViewModel.set_Number(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimChangePasswordViewModel">
+            <summary>Shim type of MyBlog3.Models.ChangePasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.#ctor(MyBlog3.Models.ChangePasswordViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances.ConfirmPasswordGet">
+            <summary>Sets the shim of ChangePasswordViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances.ConfirmPasswordSetString">
+            <summary>Sets the shim of ChangePasswordViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances.NewPasswordGet">
+            <summary>Sets the shim of ChangePasswordViewModel.get_NewPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances.NewPasswordSetString">
+            <summary>Sets the shim of ChangePasswordViewModel.set_NewPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances.OldPasswordGet">
+            <summary>Sets the shim of ChangePasswordViewModel.get_OldPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.AllInstances.OldPasswordSetString">
+            <summary>Sets the shim of ChangePasswordViewModel.set_OldPassword(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.ConfirmPasswordGet">
+            <summary>Sets the shim of ChangePasswordViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.ConfirmPasswordSetString">
+            <summary>Sets the shim of ChangePasswordViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.Constructor">
+            <summary>Sets the shim of ChangePasswordViewModel.ChangePasswordViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.NewPasswordGet">
+            <summary>Sets the shim of ChangePasswordViewModel.get_NewPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.NewPasswordSetString">
+            <summary>Sets the shim of ChangePasswordViewModel.set_NewPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.OldPasswordGet">
+            <summary>Sets the shim of ChangePasswordViewModel.get_OldPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimChangePasswordViewModel.OldPasswordSetString">
+            <summary>Sets the shim of ChangePasswordViewModel.set_OldPassword(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel">
+            <summary>Shim type of MyBlog3.Models.ConfigureTwoFactorViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.#ctor(MyBlog3.Models.ConfigureTwoFactorViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.AllInstances.ProvidersGet">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.get_Providers()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.AllInstances.ProvidersSetICollectionOfSelectListItem">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.set_Providers(ICollection`1&lt;SelectListItem&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.AllInstances.SelectedProviderGet">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.get_SelectedProvider()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.AllInstances.SelectedProviderSetString">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.set_SelectedProvider(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.Constructor">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.ConfigureTwoFactorViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.ProvidersGet">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.get_Providers()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.ProvidersSetICollectionOfSelectListItem">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.set_Providers(ICollection`1&lt;SelectListItem&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.SelectedProviderGet">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.get_SelectedProvider()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimConfigureTwoFactorViewModel.SelectedProviderSetString">
+            <summary>Sets the shim of ConfigureTwoFactorViewModel.set_SelectedProvider(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimFactorViewModel">
+            <summary>Shim type of MyBlog3.Models.FactorViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimFactorViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimFactorViewModel.#ctor(MyBlog3.Models.FactorViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimFactorViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimFactorViewModel.AllInstances.PurposeGet">
+            <summary>Sets the shim of FactorViewModel.get_Purpose()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimFactorViewModel.AllInstances.PurposeSetString">
+            <summary>Sets the shim of FactorViewModel.set_Purpose(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimFactorViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimFactorViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimFactorViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimFactorViewModel.Constructor">
+            <summary>Sets the shim of FactorViewModel.FactorViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimFactorViewModel.PurposeGet">
+            <summary>Sets the shim of FactorViewModel.get_Purpose()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimFactorViewModel.PurposeSetString">
+            <summary>Sets the shim of FactorViewModel.set_Purpose(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimIndexViewModel">
+            <summary>Shim type of MyBlog3.Models.IndexViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimIndexViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimIndexViewModel.#ctor(MyBlog3.Models.IndexViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.ArticlesGet">
+            <summary>Sets the shim of IndexViewModel.get_Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.ArticlesSetIEnumerableOfArticle">
+            <summary>Sets the shim of IndexViewModel.set_Articles(IEnumerable`1&lt;Article&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.BrowserRememberedGet">
+            <summary>Sets the shim of IndexViewModel.get_BrowserRemembered()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.BrowserRememberedSetBoolean">
+            <summary>Sets the shim of IndexViewModel.set_BrowserRemembered(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.HasPasswordGet">
+            <summary>Sets the shim of IndexViewModel.get_HasPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.HasPasswordSetBoolean">
+            <summary>Sets the shim of IndexViewModel.set_HasPassword(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.LoginsGet">
+            <summary>Sets the shim of IndexViewModel.get_Logins()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.LoginsSetIListOfUserLoginInfo">
+            <summary>Sets the shim of IndexViewModel.set_Logins(IList`1&lt;UserLoginInfo&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.PhoneNumberGet">
+            <summary>Sets the shim of IndexViewModel.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.PhoneNumberSetString">
+            <summary>Sets the shim of IndexViewModel.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.TwoFactorGet">
+            <summary>Sets the shim of IndexViewModel.get_TwoFactor()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.AllInstances.TwoFactorSetBoolean">
+            <summary>Sets the shim of IndexViewModel.set_TwoFactor(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.ArticlesGet">
+            <summary>Sets the shim of IndexViewModel.get_Articles()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.ArticlesSetIEnumerableOfArticle">
+            <summary>Sets the shim of IndexViewModel.set_Articles(IEnumerable`1&lt;Article&gt; value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimIndexViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimIndexViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.BrowserRememberedGet">
+            <summary>Sets the shim of IndexViewModel.get_BrowserRemembered()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.BrowserRememberedSetBoolean">
+            <summary>Sets the shim of IndexViewModel.set_BrowserRemembered(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.Constructor">
+            <summary>Sets the shim of IndexViewModel.IndexViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.HasPasswordGet">
+            <summary>Sets the shim of IndexViewModel.get_HasPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.HasPasswordSetBoolean">
+            <summary>Sets the shim of IndexViewModel.set_HasPassword(Boolean value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.LoginsGet">
+            <summary>Sets the shim of IndexViewModel.get_Logins()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.LoginsSetIListOfUserLoginInfo">
+            <summary>Sets the shim of IndexViewModel.set_Logins(IList`1&lt;UserLoginInfo&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.PhoneNumberGet">
+            <summary>Sets the shim of IndexViewModel.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.PhoneNumberSetString">
+            <summary>Sets the shim of IndexViewModel.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.TwoFactorGet">
+            <summary>Sets the shim of IndexViewModel.get_TwoFactor()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimIndexViewModel.TwoFactorSetBoolean">
+            <summary>Sets the shim of IndexViewModel.set_TwoFactor(Boolean value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimManageLoginsViewModel">
+            <summary>Shim type of MyBlog3.Models.ManageLoginsViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.#ctor(MyBlog3.Models.ManageLoginsViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.AllInstances.CurrentLoginsGet">
+            <summary>Sets the shim of ManageLoginsViewModel.get_CurrentLogins()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.AllInstances.CurrentLoginsSetIListOfUserLoginInfo">
+            <summary>Sets the shim of ManageLoginsViewModel.set_CurrentLogins(IList`1&lt;UserLoginInfo&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.AllInstances.OtherLoginsGet">
+            <summary>Sets the shim of ManageLoginsViewModel.get_OtherLogins()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.AllInstances.OtherLoginsSetIListOfAuthenticationDescription">
+            <summary>Sets the shim of ManageLoginsViewModel.set_OtherLogins(IList`1&lt;AuthenticationDescription&gt; value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.Constructor">
+            <summary>Sets the shim of ManageLoginsViewModel.ManageLoginsViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.CurrentLoginsGet">
+            <summary>Sets the shim of ManageLoginsViewModel.get_CurrentLogins()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.CurrentLoginsSetIListOfUserLoginInfo">
+            <summary>Sets the shim of ManageLoginsViewModel.set_CurrentLogins(IList`1&lt;UserLoginInfo&gt; value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.OtherLoginsGet">
+            <summary>Sets the shim of ManageLoginsViewModel.get_OtherLogins()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimManageLoginsViewModel.OtherLoginsSetIListOfAuthenticationDescription">
+            <summary>Sets the shim of ManageLoginsViewModel.set_OtherLogins(IList`1&lt;AuthenticationDescription&gt; value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimSetPasswordViewModel">
+            <summary>Shim type of MyBlog3.Models.SetPasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.#ctor(MyBlog3.Models.SetPasswordViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.AllInstances.ConfirmPasswordGet">
+            <summary>Sets the shim of SetPasswordViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.AllInstances.ConfirmPasswordSetString">
+            <summary>Sets the shim of SetPasswordViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.AllInstances.NewPasswordGet">
+            <summary>Sets the shim of SetPasswordViewModel.get_NewPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.AllInstances.NewPasswordSetString">
+            <summary>Sets the shim of SetPasswordViewModel.set_NewPassword(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.ConfirmPasswordGet">
+            <summary>Sets the shim of SetPasswordViewModel.get_ConfirmPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.ConfirmPasswordSetString">
+            <summary>Sets the shim of SetPasswordViewModel.set_ConfirmPassword(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.Constructor">
+            <summary>Sets the shim of SetPasswordViewModel.SetPasswordViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.NewPasswordGet">
+            <summary>Sets the shim of SetPasswordViewModel.get_NewPassword()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimSetPasswordViewModel.NewPasswordSetString">
+            <summary>Sets the shim of SetPasswordViewModel.set_NewPassword(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel">
+            <summary>Shim type of MyBlog3.Models.VerifyPhoneNumberViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.#ctor(MyBlog3.Models.VerifyPhoneNumberViewModel)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.AllInstances.CodeGet">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.get_Code()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.AllInstances.CodeSetString">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.set_Code(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.AllInstances.PhoneNumberGet">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.AllInstances.PhoneNumberSetString">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.CodeGet">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.get_Code()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.CodeSetString">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.set_Code(String value)</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.Constructor">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.VerifyPhoneNumberViewModel()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.PhoneNumberGet">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.ShimVerifyPhoneNumberViewModel.PhoneNumberSetString">
+            <summary>Sets the shim of VerifyPhoneNumberViewModel.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubAddPhoneNumberViewModel">
+            <summary>Stub type of MyBlog3.Models.AddPhoneNumberViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubAddPhoneNumberViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubAddPhoneNumberViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubAddPhoneNumberViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubAddPhoneNumberViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubAddPhoneNumberViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubAddPhoneNumberViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubChangePasswordViewModel">
+            <summary>Stub type of MyBlog3.Models.ChangePasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubChangePasswordViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubChangePasswordViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubChangePasswordViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubChangePasswordViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubChangePasswordViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubChangePasswordViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubConfigureTwoFactorViewModel">
+            <summary>Stub type of MyBlog3.Models.ConfigureTwoFactorViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubConfigureTwoFactorViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubConfigureTwoFactorViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubConfigureTwoFactorViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigureTwoFactorViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubConfigureTwoFactorViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubConfigureTwoFactorViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubFactorViewModel">
+            <summary>Stub type of MyBlog3.Models.FactorViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubFactorViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubFactorViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubFactorViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubFactorViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubFactorViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubFactorViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubIndexViewModel">
+            <summary>Stub type of MyBlog3.Models.IndexViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubIndexViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubIndexViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubIndexViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubIndexViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubIndexViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubIndexViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubManageLoginsViewModel">
+            <summary>Stub type of MyBlog3.Models.ManageLoginsViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubManageLoginsViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubManageLoginsViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubManageLoginsViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubManageLoginsViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubManageLoginsViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubManageLoginsViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubSetPasswordViewModel">
+            <summary>Stub type of MyBlog3.Models.SetPasswordViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubSetPasswordViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubSetPasswordViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubSetPasswordViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubSetPasswordViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubSetPasswordViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubSetPasswordViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:MyBlog3.Models.Fakes.StubVerifyPhoneNumberViewModel">
+            <summary>Stub type of MyBlog3.Models.VerifyPhoneNumberViewModel</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubVerifyPhoneNumberViewModel.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubVerifyPhoneNumberViewModel.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MyBlog3.Models.Fakes.StubVerifyPhoneNumberViewModel.InitializeStub">
+            <summary>Initializes a new instance of type StubVerifyPhoneNumberViewModel</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubVerifyPhoneNumberViewModel.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MyBlog3.Models.Fakes.StubVerifyPhoneNumberViewModel.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

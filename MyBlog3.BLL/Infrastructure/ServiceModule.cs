@@ -10,7 +10,7 @@ using MyBlog3.DAL.Repositories;
 
 namespace MyBlog3.BLL.Infrastructure
 {
-    class ServiceModule : NinjectModule
+    public class ServiceModule : NinjectModule
     {
         private string connectionString;
         public ServiceModule(string connection)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyBlog3.BLL.DTO
 {
-    class PictureDTO
+    public class PictureDTO
     {
         public int Id { get; set; }
         public int ArticleId { get; set; }

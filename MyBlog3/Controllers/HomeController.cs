@@ -3,6 +3,8 @@ using System.Web.Mvc;
 using MyBlog3.Models;
 using AutoMapper;
 using MyBlog3.BLL.DTO;
+using MyBlog3.BLL.Interfaces;
+using MyBlog3.BLL.Services;
 
 namespace MyBlog3.Controllers
 {
@@ -19,9 +21,9 @@ namespace MyBlog3.Controllers
         {
             // получаем из бд все объекты Article
             //IEnumerable<Article> articles = db.Articles;
-            IEnumerable<ArticleDTO> articleDtos = articleService.GetArticle();
+            IEnumerable<ArticleDTO> articleDtos = articleService.GetArticles();
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<ArticleDTO, ArticleViewModel>()).CreateMapper();
-            var phones = mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articleDtos);
+            var articles = mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articleDtos);
 
             //int pageSize = 3; // количество объектов на страницу
             //IEnumerable<ArticleDTO> articlesPerPages = articles.Skip((page - 1) * pageSize).Take(pageSize);
