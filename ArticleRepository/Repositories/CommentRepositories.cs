@@ -26,7 +26,7 @@ namespace MyBlog3.DAL.Repositories
 
         public Comment Get(int id)
         {
-            return db.Comments.Find(id);
+            return db.Comments.FirstOrDefault( p => p.ArticleId == id );
         }
 
         public void Create(Comment comment)

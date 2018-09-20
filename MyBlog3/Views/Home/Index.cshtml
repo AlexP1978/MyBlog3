@@ -58,11 +58,11 @@
         <h3>Статьи блога</h3>
         @foreach (var item in Model)
         {
-            <h4>@Html.DisplayFor(modelItem => item.Name)</h4>
-            <p>Автор: @Html.DisplayFor(modelItem => item.Author)</p>
-                <p> Категория: @Html.DisplayFor(modelItem => item.Category) </p>
-                <p> @Html.DisplayFor(modelItem => item.ShortBody) </p>
-                <p> @Html.DisplayFor(modelItem => item.DataTxt) </p>
+            <h4>@item.Name</h4>
+            <p>Автор: @item.Author</p>
+                <p> Категория: @item.Category </p>
+                <p> @item.ShortBody </p>
+                <p> @item.DataTxt </p>
                 <p><a href = "/Home/More/@item.Id" > подробнее...</a></p>
                 <p></p>
             if (User.IsInRole("admin") || ((User.IsInRole("user") && item.Author == User.Identity.Name)))

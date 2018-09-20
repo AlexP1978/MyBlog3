@@ -1,4 +1,4 @@
-﻿@model MyBlog3.Models.Article
+﻿@model IEnumerable<MyBlog3.Models.CommentViewModel>
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -18,10 +18,10 @@
             <p>@ViewBag.FullBody</p>
             <p></p>
             <p>Комментарии<p />
-              @foreach (var b in ViewBag.Comments)
+              @foreach(var b in Model )
               {
                <p>@b.Comments</p>
-               <p>Автор: @b.Author Data: @b.DataComment</p>
+               <p>Автор: @b.Author Data: @b.DataComment </p>
               }
 
             @if (User.IsInRole("admin") || User.IsInRole("user"))

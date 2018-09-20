@@ -5,6 +5,8 @@ using AutoMapper;
 using MyBlog3.BLL.DTO;
 using MyBlog3.BLL.Interfaces;
 using MyBlog3.BLL.Services;
+using MyBlog3.BLL.Infrastructure;
+using System;
 
 namespace MyBlog3.Controllers
 {
@@ -15,17 +17,14 @@ namespace MyBlog3.Controllers
         {
             articleService = serv;
         }
-        // создаем контекст данных
-        //ArticleContext db = new ArticleContext();
+
         public ActionResult Index(int page = 1)
         {
-            // получаем из бд все объекты Article
-            //IEnumerable<Article> articles = db.Articles;
             IEnumerable<ArticleDTO> articleDtos = articleService.GetArticles();
             var mapper = new MapperConfiguration(cfg => cfg.CreateMap<ArticleDTO, ArticleViewModel>()).CreateMapper();
             var articles = mapper.Map<IEnumerable<ArticleDTO>, List<ArticleViewModel>>(articleDtos);
 
-            //int pageSize = 3; // количество объектов на страницу
+            //int pageSize = 3; // the number of objects on the page
             //IEnumerable<ArticleDTO> articlesPerPages = articles.Skip((page - 1) * pageSize).Take(pageSize);
             //PageInfo pageInfo = new PageInfo { PageNumber = page, PageSize = pageSize, TotalItems = articles.Count() };
             //IndexViewModel ivm = new IndexViewModel { PageInfo = pageInfo, Articles = articlesPerPages };
@@ -37,44 +36,45 @@ namespace MyBlog3.Controllers
         [HttpGet]
         public ActionResult More(int id)
         {
-            //CommentViewModel comment;
+            try
+            {
+                ViewBag.ArticleId = id;
 
-        //    var orderDto = new OrderDTO { PhoneId = order.PhoneId, Address = order.Address, PhoneNumber = order.PhoneNumber };
-        //    orderService.MakeOrder(orderDto);
-        //    return Content("<h2>Ваш заказ успешно оформлен</h2>");
-        //}
-        //    catch (ValidationException ex)
-        //    {
-        //        ModelState.AddModelError(ex.Property, ex.Message);
-        //    }
-        //    return View(order);
+                ArticleDTO article = articleService.GetArticle(id);
+                var dtarticle = new ArticleViewModel
+                {
+                    Id       = article.Id,
+                    Name     = article.Name,
+                    DataTxt  = article.DataTxt,
+                    FullBody = article.FullBody,
+                };
+                ViewBag.Name = dtarticle.Name;
+                ViewBag.FullBody = dtarticle.FullBody;
 
-            ViewBag.ArticleId = id;
-            CommentDTO comment = articleService.GetComment(id);
-            var comm = new CommentViewModel { ArticleId = comment.Id };
+                IEnumerable<CommentDTO> commentDtos = articleService.FindComment(id);
+                var mapper = new MapperConfiguration(cfg => cfg.CreateMap<CommentDTO, CommentViewModel>()).CreateMapper();
+                var comments = mapper.Map<IEnumerable<CommentDTO>, List<CommentViewModel>>(commentDtos);
 
-            var dtarticle = new ArticleViewModel { Id = comment.Id };
-                //db.Articles.FirstOrDefault(p => p.Id == id);
-            ViewBag.Name = dtarticle.Name;
-            ViewBag.FullBody = dtarticle.FullBody;
-            // получаем из бд все объекты Article
-            //IEnumerable<Comment> comments = db.Comments.Where(v => v.ArticleId == id).ToList();
-            // передаем все объекты в динамическое свойство Articles в ViewBag
-            ViewBag.Comments = comment.Comments;
-            return View();
+                return View(comments);
+            }
+            catch (ValidationException ex)
+            {
+                return Content(ex.Message);
+            }
         }
 
-        //[HttpPost]
-        //public string More(Comment comment)
-        //{
-        //    // добавляем информацию о статье
-        //    comment.DataComment = DateTime.Now;
-        //    db.Comments.Add(comment);
-        //    // сохраняем в бд все изменения
-        //    //db.Entry(dtcomment).State = EntityState.Modified;
-        //    db.SaveChanges();
-        //    return "Спасибо, за комментарий!";
-        //}
+        [HttpPost]
+        public string More(CommentViewModel comment)
+        {
+            // add comment
+            CommentDTO commentDTO = new CommentDTO();
+            commentDTO.ArticleId = comment.ArticleId;
+            commentDTO.DataComment = DateTime.Now;
+            commentDTO.Author = User.Identity.Name;
+            commentDTO.Comments = comment.Comments;
+            articleService.CreateComment(commentDTO);
+            return "Спасибо, за комментарий!";
+        }
 
         //[HttpGet]
         //public ActionResult Adds()
@@ -85,7 +85,7 @@ namespace MyBlog3.Controllers
         //}
 
         //[HttpPost]
-        //public string Adds(Article article)
+        //public string Adds(ArticleViewModel article)
         //{
         //    // добавляем статью в базу данных
         //    article.DataTxt = DateTime.Now;

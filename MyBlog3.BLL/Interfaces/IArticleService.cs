@@ -11,8 +11,12 @@ namespace MyBlog3.BLL.Interfaces
     {
         ArticleDTO GetArticle(int? id);
         IEnumerable<ArticleDTO> GetArticles();
+        void CreateArticle(ArticleDTO article);
         CommentDTO GetComment(int? id);
         IEnumerable<CommentDTO> GetComments();
+        // from Comments where ArticleId = id
+        IEnumerable<CommentDTO> FindComment( int? id );
+        void CreateComment(CommentDTO comment);
         PictureDTO GetPicture(int? id);
         IEnumerable<PictureDTO> GetPictures();
         void Dispose();
