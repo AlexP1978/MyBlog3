@@ -76,61 +76,91 @@ namespace MyBlog3.Controllers
             return "Спасибо, за комментарий!";
         }
 
-        //[HttpGet]
-        //public ActionResult Adds()
-        //{
-        //    ViewBag.Name = "Добавление статьи";
-        //    // передаем все объекты в динамическое свойство Articles в ViewBag
-        //    return View();
-        //}
+        [HttpGet]
+        public ActionResult Adds()
+        {
+            ViewBag.Name = "Добавление статьи";
+            // передаем все объекты в динамическое свойство Articles в ViewBag
+            return View();
+        }
 
-        //[HttpPost]
-        //public string Adds(ArticleViewModel article)
-        //{
-        //    // добавляем статью в базу данных
-        //    article.DataTxt = DateTime.Now;
-        //    article.Author = User.Identity.Name;
-        //    db.Articles.Add(article);
-        //    // сохраняем в бд все изменения
-        //    //db.Entry(dtcomment).State = EntityState.Modified;
-        //    db.SaveChanges();
-        //    return "Статья добавлена.";
-        //}
+        [HttpPost]
+        public string Adds(ArticleViewModel articleView)
+        {
+            // add article
+            ArticleDTO articleDTO = new ArticleDTO();
+            articleDTO.Name       = articleView.Name;
+            articleDTO.DataTxt    = DateTime.Now;
+            articleDTO.Author     = User.Identity.Name;
+            articleDTO.Category   = articleView.Category;
+            articleDTO.ShortBody  = articleView.ShortBody;
+            articleDTO.FullBody   = articleView.FullBody;
 
-        //[HttpGet]
-        //public ActionResult Editing(int id)
-        //{
-        //    ViewBag.ArticleId = id;
-        //    var dtarticle = db.Articles.FirstOrDefault(p => p.Id == id);
-        //    ViewBag.Name = dtarticle.Name;
-        //    ViewBag.FullBody = dtarticle.FullBody;
+            articleService.CreateArticle(articleDTO);
+            return "Статья добавлена.";
+        }
 
-        //    return View();
-        //}
+        [HttpGet]
+        public ActionResult Editing(int id)
+        {
+            ViewBag.ArticleId = id;
 
-        //[HttpPost]
-        //public string Editing(Article article)
-        //{
-        //    // редактируем статью
-        //    article.DataTxt = DateTime.Now;
-        //    if ( article.Author == null ) article.Author = User.Identity.Name;
-        //    //db.Articles.Add(article);
-        //    // сохраняем в бд все изменения
-        //    db.Entry(article).State = EntityState.Modified;
-        //    db.SaveChanges();
-        //    return "Статья изменена.";
-        //}
+            ArticleDTO article = articleService.GetArticle(id);
+            var dtarticle = new ArticleViewModel
+            {
+                Id        = article.Id,
+                Name      = article.Name,
+                Category  = article.Category,
+                Author    = article.Author,
+                DataTxt   = article.DataTxt,
+                ShortBody = article.ShortBody,
+                FullBody  = article.FullBody,
+            };
+            ViewBag.Name      = dtarticle.Name;
+            ViewBag.FullBody  = dtarticle.FullBody;
+            ViewBag.ShortBody = dtarticle.ShortBody;
+            ViewBag.Author    = dtarticle.Author;
 
-        //[HttpGet]
-        //public string Deleting(Article article)
-        //{
-        //    // удаляем статью
-        //    db.Entry(article).State = EntityState.Deleted;
-        //    db.SaveChanges();
-        //    // сохраняем в бд все изменения
-        //    //db.SaveChanges();
-        //    return "Статья удалена.";
-        //}
+            return View();
+        }
+
+        [HttpPost]
+        public string Editing(ArticleViewModel articleView)
+        {
+            //// редактируем статью
+            //article.DataTxt = DateTime.Now;
+            //if (article.Author == null) article.Author = User.Identity.Name;
+            ////db.Articles.Add(article);
+            //// сохраняем в бд все изменения
+            //db.Entry(article).State = EntityState.Modified;
+            //db.SaveChanges();
+            // add article
+            ArticleDTO articleDTO = new ArticleDTO();
+            articleDTO.Name       = articleView.Name;
+            articleDTO.DataTxt    = DateTime.Now;
+            articleDTO.Author     = User.Identity.Name;
+            articleDTO.Category   = articleView.Category;
+            articleDTO.ShortBody  = articleView.ShortBody;
+            articleDTO.FullBody   = articleView.FullBody;
+
+            articleService.UpdateArticle(articleDTO);
+
+            return "Статья изменена.";
+        }
+
+        [HttpGet]
+        public string Deleting(int id)
+        {
+            //// удаляем статью
+            //db.Entry(article).State = EntityState.Deleted;
+            //db.SaveChanges();
+            //// сохраняем в бд все изменения
+            ////db.SaveChanges();
+
+            articleService.DeleteArticle(id);
+
+            return "Статья удалена.";
+        }
 
         public ActionResult About()
         {

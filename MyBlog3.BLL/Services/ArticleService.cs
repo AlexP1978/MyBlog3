@@ -49,8 +49,35 @@ namespace MyBlog3.BLL.Services
 
         public void CreateArticle(ArticleDTO articleDTO)
         {
-            Article article = Database.Articles.Get(articleDTO.Id);
+            Article article   = new Article();
+            article.Name      = articleDTO.Name;
+            article.DataTxt   = articleDTO.DataTxt;
+            article.Author    = articleDTO.Author;
+            article.Category  = articleDTO.Category;
+            article.ShortBody = articleDTO.ShortBody;
+            article.FullBody  = articleDTO.FullBody;
+
             Database.Articles.Create(article);
+            Database.Save();
+        }
+
+        public void UpdateArticle(ArticleDTO articleDTO)
+        {
+            Article article = new Article();
+            article.Name = articleDTO.Name;
+            article.DataTxt = articleDTO.DataTxt;
+            article.Author = articleDTO.Author;
+            article.Category = articleDTO.Category;
+            article.ShortBody = articleDTO.ShortBody;
+            article.FullBody = articleDTO.FullBody;
+
+            Database.Articles.Update(article);
+            Database.Save();
+        }
+
+        public void DeleteArticle( int? id )
+        {
+            Database.Articles.Delete(id.Value);
             Database.Save();
         }
 

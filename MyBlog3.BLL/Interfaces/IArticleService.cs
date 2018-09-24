@@ -12,6 +12,8 @@ namespace MyBlog3.BLL.Interfaces
         ArticleDTO GetArticle(int? id);
         IEnumerable<ArticleDTO> GetArticles();
         void CreateArticle(ArticleDTO article);
+        void UpdateArticle(ArticleDTO article);
+        void DeleteArticle(int? id);
         CommentDTO GetComment(int? id);
         IEnumerable<CommentDTO> GetComments();
         // from Comments where ArticleId = id
